@@ -1,0 +1,13 @@
+package application;
+
+public class ProfitMarginCalculator {
+    private double profitMargin;
+
+    public ProfitMarginCalculator(double profitMargin) {
+        this.profitMargin = profitMargin;
+    }
+
+    public double calculateProfit(double costPrice) {
+        return costPrice * (profitMargin / 100);
+    }
+}

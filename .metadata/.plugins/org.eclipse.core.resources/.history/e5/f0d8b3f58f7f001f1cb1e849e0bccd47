@@ -1,0 +1,13 @@
+package application;
+
+public class Product {
+    private double costPrice;
+
+    public Product(double costPrice) {
+        this.costPrice = costPrice;
+    }
+
+    public double getCostPrice() {
+        return costPrice;
+    }
+}

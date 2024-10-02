@@ -1,0 +1,26 @@
+package application;
+
+public class TaxCalculator {
+    private double ipiRate = 0.0015; 
+    private double icmsRate;
+    private double issRate;  
+
+    public TaxCalculator(double icmsRate, double issRate) {
+        this.icmsRate = icmsRate;
+        this.issRate = issRate;
+    }
+
+    public double calculateIPITax(Product product) {
+        double baseCalculation = product.getBaseCalculation();
+        return baseCalculation * ipiRate;
+    }
+
+    public double calculateICMSTax(Product product) {
+        double productValue = product.getProductValue();
+        return productValue * (icmsRate / 100);
+    }
+
+    public double calculateISSTax(double serviceValue) {
+        return serviceValue * (issRate / 100);
+    }
+}

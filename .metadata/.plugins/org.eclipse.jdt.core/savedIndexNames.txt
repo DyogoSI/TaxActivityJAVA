@@ -1,0 +1,4 @@
+INDEX VERSION 1.134+C:\Users\dyogo\OneDrive\Documentos\workspace-2024\ATIVIDADE LPIII\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+1635404021.index
+3446696178.index
